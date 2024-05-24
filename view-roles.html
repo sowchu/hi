@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Role IDs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>View Role IDs</h1>
+        <nav>
+            <a href="index.html">Create/Update Lambda</a>
+            <a href="view-roles.html">View Role IDs</a>
+        </nav>
+    </header>
+    <main>
+        <section id="view-roles">
+            <h2>Search for Lambda Function</h2>
+            <form id="view-roles-form">
+                <input type="text" id="search-function-name" placeholder="Function Name" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="role-id-result"></div>
+        </section>
+    </main>
+    <script src="view-roles.js"></script>
+</body>
+</html>

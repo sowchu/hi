@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda Management - Create/Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lambda Management</h1>
+        <nav>
+            <a href="index.html">Create/Update Lambda</a>
+            <a href="view-roles.html">View Role IDs</a>
+        </nav>
+    </header>
+    <main>
+        <section id="create">
+            <h2>Create Lambda</h2>
+            <form id="create-form">
+                <input type="text" id="create-function-name" placeholder="Function Name" required>
+                <button type="submit">Create Lambda</button>
+            </form>
+        </section>
+        <section id="update">
+            <h2>Update Lambda</h2>
+            <form id="update-form">
+                <input type="text" id="update-function-name" placeholder="Function Name" required>
+                <input type="text" id="update-role-name" placeholder="Role Name" required>
+                <button type="submit">Update Lambda</button>
+            </form>
+        </section>
+        <button id="demo-button">Sign In</button>
+    </main>
+    <script src="main.js"></script>
+    <script>
+        const demoButton = document.getElementById('demo-button');
+        demoButton.addEventListener('click', () => {
+            window.location.href = 'https://19dit015.auth.ap-south-1.amazoncognito.com/login?client_id=76f4fvt655fgpgafjahsankvrg&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https%3A%2F%2Frushidonga.github.io%2Fcognito-auth%2Fget-in-touch.html';
+        });
+    </script>
+</body>
+</html>
